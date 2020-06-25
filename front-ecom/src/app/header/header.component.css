@@ -1,0 +1,206 @@
+
+.ht-right .lan-selector {
+	max-width: 142px;
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+}
+
+.ht-right .lan-selector .ddcommon {
+	max-width: 142px;
+	-webkit-box-shadow: none !important;
+	box-shadow: none !important;
+	outline: none;
+	cursor: pointer;
+	padding: 0 20px;
+}
+
+.ht-right .lan-selector .ddcommon .ddTitle .ddTitleText img {
+	padding-right: 5px;
+}
+
+.ht-right .lan-selector .ddcommon .ddTitle .ddTitleText span {
+	font-size: 14px;
+	color: #252525;
+}
+
+.ht-right .lan-selector .ddcommon .ddTitle .ddArrow:before {
+	content: "3";
+	font-family: "ElegantIcons";
+	font-size: 14px;
+	color: #636363;
+	float: right;
+	position: relative;
+	right: 0;
+	line-height: 26px;
+}
+
+.ht-right .lan-selector .ddcommon .ddChild {
+	background: #fff;
+	max-width: 142px;
+	width: 100%;
+	position: relative;
+	left: 0;
+}
+
+.ht-right .lan-selector .ddcommon .ddChild ul {
+	width: 100%;
+	max-width: 142px;
+}
+
+.ht-right .lan-selector .ddcommon .ddChild ul li {
+	line-height: 23px;
+	padding: 0px 10px;
+	list-style: none;
+}
+
+.ht-right .lan-selector .ddcommon .ddChild ul li img {
+	padding-right: 10px;
+}
+
+.ht-right .lan-selector .ddcommon .ddChild ul li span {
+	font-size: 13px;
+	color: #000;
+	letter-spacing: 0.325px;
+}
+
+.header-top {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.header-top .ht-left {
+	float: left;
+}
+
+.header-top .ht-left .mail-service {
+	font-size: 16px;
+	color: #252525;
+	float: left;
+	border-right: 1px solid #E5E5E5;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-right: 20px;
+}
+
+.header-top .ht-left .mail-service i {
+	margin-right: 5px;
+}
+
+.header-top .ht-left .phone-service {
+	float: right;
+	font-size: 14px;
+	color: #252525;
+	line-height: 27px;
+	padding-top: 15px;
+	padding-bottom: 12px;
+	padding-left: 20px;
+}
+
+.header-top .ht-left .phone-service i {
+	margin-right: 5px;
+}
+
+.header-top .ht-right {
+	float: right;
+}
+
+.header-top .ht-right .login-panel {
+	float: right;
+	font-size: 14px;
+	color: #252525;
+	display: inline-block;
+	padding-left: 20px;
+	border-left: 1px solid #e5e5e5;
+	padding-top: 18px;
+	padding-bottom: 15px;
+}
+
+.header-top .ht-right .login-panel i {
+	margin-right: 8px;
+}
+
+.header-top .ht-right .lan-selector {
+	float: right;
+	margin-top: 15px;
+	margin-bottom: 13px;
+}
+
+.header-top .ht-right .top-social {
+	float: right;
+	padding-right: 20px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	border-right: 1px solid #e5e5e5;
+}
+
+.header-top .ht-right .top-social a {
+	color: #252525;
+	font-size: 14px;
+	display: inline-block;
+	margin-left: 15px;
+}
+
+
+.site-navbar {
+    background: #fff;
+    margin-bottom: 0px;
+    z-index: 1999;
+    position: relative; }
+    .site-navbar.transparent {
+      background: transparent; }
+    .site-navbar .site-navbar-top {
+      border-bottom: 1px solid #f3f3f4;
+      padding-top: 2px;
+      padding-bottom: 3px;
+      margin-bottom: 0px; }
+      @media (min-width: 768px) {
+        .site-navbar .site-navbar-top {
+          padding-top: 15px;
+          padding-bottom: 15px; } }
+    .site-navbar a {
+      color: #868995; }
+      .site-navbar a:hover {
+        color: #3d3f45; }
+    .site-navbar .icon {
+      font-size: 10px; }
+    .site-navbar .site-top-icons ul, .site-navbar .site-top-icons ul li {
+      padding: 0;
+      margin: 0;
+      list-style: none; }
+    .site-navbar .site-top-icons ul li {
+      display: inline-block; }
+      .site-navbar .site-top-icons ul li a {
+        margin-right: 10px; }
+        .site-navbar .site-top-icons ul li a.site-cart {
+          display: block;
+          position: relative; }
+    .site-mobile-menu .site-mobile-menu-body {
+      overflow-y: scroll;
+      -webkit-overflow-scrolling: touch;
+      position: relative;
+      padding: 20px;
+      height: calc(100vh - 52px);
+      padding-bottom: 150px; }
+
+
+.sp {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.navbar-nav {
+  padding-left: 350px;
+}
+
+.nav-item{
+  padding-left: 50px;
+  padding-left: 50px;
+}
+
+.bg-custom {
+  background-color: #fff;
+  align-content: center;
+}

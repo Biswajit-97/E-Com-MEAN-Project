@@ -1,0 +1,99 @@
+<header class="site-navbar" role="banner">
+
+    <div class="header-top">
+        <div class="container">
+            <div class="ht-left">
+              <div class="mail-service">
+                <a class="nav-link" *ngIf="!session_set" routerLink="/register">Registration</a>
+              </div>
+                <div class="phone-service">
+                  <a class="nav-link" *ngIf="!session_set" routerLink="/login">Login</a>
+                </div>
+
+                <div class="phone-service">
+                  <a class="nav-link" *ngIf="session_set" (click)="logout()">Logout </a>
+                </div>
+            </div>
+            <div class="ht-right">
+                <div class="lan-selector">
+                    <select class="language_drop" name="countries" id="countries" style="width:125px;">
+                        <option value='yt' data-image="assets/un.png" data-imagecss="flag yt"
+                            data-title="English">India</option>
+                        <option value='yu' data-image="assets/in." data-imagecss="flag yu"
+                            data-title="India">United States </option>
+                    </select>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="site-navbar-top">
+      <div class="container">
+        <div class="row align-items-center">
+
+          <div class="col-6 col-md-4 order-2 order-md-1 text-left">
+          </div>
+
+          <div class="col-12 mb-3 mb-md-0 col-md-4 order-1 order-md-2 text-center">
+            <div class="site-logo">
+              <a class="navbar-brand" routerLink="/main">
+                <img src="assets/logo1.png" height="100px" alt="">
+              </a>
+             </div>
+          </div>
+
+          <div class="col-6 col-md-4 order-3 order-md-3 text-right">
+            <div class="site-top-icons">
+              <ul>
+                <li><a class="nav-link" *ngIf="!session_set" routerLink="/login">
+                  <span class="sp"><i class="fa fa-user"></i></span></a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" *ngIf="session_set" routerLink="/main">Welcome{{username}}</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" *ngIf="session_set" routerLink="/order">my order</a>
+                </li>
+                <li>
+                  <a routerLink="/cart" class="site-cart">
+                    <span class="sp"><i class="fa fa-shopping-cart"></i></span>
+                  </a>
+                </li>
+                <li class="d-inline-block d-md-none ml-md-0"><a routerLink="/cart" class="site-menu-toggle js-menu-toggle"><span class="icon-menu"></span></a></li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-custom">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" routerLink="/main">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Shop Now
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+  </header>

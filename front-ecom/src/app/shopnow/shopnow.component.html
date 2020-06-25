@@ -1,0 +1,37 @@
+<div class="p-3">
+    <div class="row">
+        <div class="col-lg-3">
+         <app-filter></app-filter>
+        </div>
+        <div class="col-lg-9">
+        
+            
+
+<div class="container cc2">
+    <div>
+    <div class="row">
+         <div class="col-md-3 col-sm-6 cust"  *ngFor='let i of products'>
+               <div class="product-grid6">
+                    <div class="product-image6">
+                        <a routerLink="/product-detail/{{i._id}}">
+                          <img class="pic-1"  src="http://localhost:3006/{{i.productImagePath}}"> 
+                          </a>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="title"><a routerLink="/product-detail/{{i._id}}">{{i.name}}</a></h3>
+                        <div class="price">Rs. {{i.price}}
+                           <span>Rs. 2400 </span>
+                        </div>
+                    </div>
+                    <ul class="social">
+                        <li><a routerLink="/product-detail/{{i._id}}" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
+                    </ul>
+         </div>
+     </div>
+  </div>
+  </div>
+
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,30 @@
+<div class="custom">
+<div class=" card  " >
+    <div class="gap justify-content-center">
+        <img class="center" src="assets/logo2.png" width="65px" alt=""> 
+    </div>
+    <div class="title mx-auto"> Thank you for your order! </div>
+    <div class="main"> <span id="sub-title">
+            <p><b>Orders Summary</b></p>
+        </span>
+        <div class="row row-main "  *ngFor="let i of order; let m=index"> 
+            <div class="col-8">
+                <div class="row d-flex">
+                    <p *ngFor="let x of order[m].products"><b>{{x.name}} &nbsp; &nbsp;</b></p>
+                </div>
+                <div class="row d-flex">
+                    <p *ngFor="let x of order[m].products"><b> {{x.price}}  *  {{x.count}} &nbsp; &nbsp; </b></p>
+
+                </div>
+            </div>
+            <div class="col-4 d-flex justify-content-end">
+                <p><b>Rs. {{i.amount }} </b></p>
+            </div>
+        </div>
+        
+        
+    </div>
+</div>
+</div>
+
+
